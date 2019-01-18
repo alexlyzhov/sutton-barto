@@ -1,0 +1,40 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+
+\topmargin 0.0cm
+\oddsidemargin 0.2cm
+\textwidth 16cm 
+\textheight 21cm
+\footskip 1.0cm
+
+\title{Implementation of Example 8.3 from Sutton-Barto} 
+
+\author
+{Alexander Lyzhov\\
+\\
+\normalsize{Skolkovo Institute of Science and Technology}\\
+\\
+\normalsize{E-mail:  nikkou.postbox@gmail.com}
+}
+
+\date{}
+
+\begin{document} 
+
+\maketitle 
+
+\newpage
+
+\section{Experimental Results}
+
+This figure compares the cumulative reward of several RL algorithms with incorporated planning.
+They are solving an episodic problem of getting from point A to point B on a grid.
+The trick is that when half of epochs are completed, a new, more efficient pathway is opened.
+Versions with advanced exploration with various parameters perform much better than simple eps-greedy exploration.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\textwidth]{plot}
+\end{figure}
+
+\end{document}
